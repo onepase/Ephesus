@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="post-container">
+	{% for post in paginator.posts %}
+        <div class="post-list">
+            <a class="post-title" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%d.%m.%Y" }}</time>
+        </div>
+    {% endfor %}
+</div>
+{% include pagination.html %}

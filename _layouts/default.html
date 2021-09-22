@@ -1,0 +1,28 @@
+{% include header.html %}
+<div class="container">
+	<div class="profile">
+		<a href="{{ site.url }}{{ site.baseurl }}"><img src="{{site.author.picture}}" class="profile-image"></a>
+		<div class="profile-about">
+			<h2 style="margin-bottom: 0; font-weight: 700;">{{site.author.name}}</h2>
+			{% if site.author.facebook %}
+				<a href="https://facebook.com/{{site.author.facebook}}" target="_blank"><img src="assets/images/icon/facebook.svg" class="social-icon"></a>
+			{% endif %}
+			<a href="https://twitter.com/{{site.author.twitter}}" target="_blank"><img src="assets/images/icon/twitter.svg" class="social-icon"></a>
+			<a href="https://instagram.com/{{site.author.instagram}}" target="_blank"><img src="assets/images/icon/instagram.svg" class="social-icon"></a>
+			<a href="https://youtube.com/{{site.author.youtube}}" target="_blank"><img src="assets/images/icon/youtube.svg" class="social-icon"></a>
+			<a href="https://github.com/{{site.author.github}}" target="_blank"><img src="assets/images/icon/github.svg" class="social-icon"></a>
+			<a href="about"><img src="assets/images/icon/me.svg" class="social-icon"></a>
+			<br>
+			{{ site.author.bio }}
+			<br>
+			<div class="mode" id="mode-switcher" onclick="toggleNightMode();">
+				<span></span>
+			</div>
+		</div>
+	</div>
+	{{ content }}
+	<div class="footer">
+		<span>Made with <font color="red">♥</font> on Earth, a minimalist Jekyll Theme by <a href="https://hakan.io"><b>Hakan</b></a></span>
+	</div>
+</div>
+{% include footer.html %}

@@ -1,0 +1,83 @@
+# Site settings
+site: Ephesus
+title: Ephesus Blog
+keywords: ephesus, blog
+description: >-
+  Hakan Torun Personal Blog
+lang: en-US
+timezone:  Europe/Istanbul
+repo: https://github.com/onepase/Ephesus # site repo [optional]
+google_verify:      Q4Ewp22lX-DiRoBVzVVP13l6lh2oxChSmpGfBP0SPj8 # Put your Google Verification here
+google_analytics:   UA-50152086-19 # Put your Google Analytics code
+discus-identifier: hakanio
+
+# Author settings
+author:
+  name: Hakan Torun
+  bio: Computer Engineer @pardinus <br> Founder @zaqa <br> Open Source /#linux
+  picture: assets/images/profile.jpg 
+  github: onepase # github username
+  twitter: onepase # twitter username
+  facebook: onepase # facebook username
+  instagram: onepase # instagram username
+  youtube: onepase # youtube username
+  email: your-email@email.com # email adress
+
+
+# URL settings
+url: "http://127.0.0.1:4000" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false

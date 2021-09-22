@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}" data-theme="light">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+		<meta name="keywords" content="{% if page.tags %}{{page.tags}}{% else %}{{site.keywords}}{% endif %}">
+		<base href="{{ site.url }}{{ site.baseurl }}" />
+		{% if page.date %}
+    	<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    	<meta content="{{ site.url }}/about/" property="article:author">
+  		{% endif %}
+		<meta property="og:site_name" content="{{site.title}}">
+		<meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
+		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{page.url}}"/>
+		<meta property="og:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
+		<meta property="og:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
+		<meta property="og:image" content="assets/images/favicon.png"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta property="twitter:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
+		<meta property="twitter:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
+		<meta property="twitter:image" content="assets/images/favicon.png" />
+		<link rel="stylesheet" href="assets/css/highlight.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" href="assets/images/favicon.png" />
+		<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/atom.xml">
+		<link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/feed.json" />
+		<link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.url }}{{ site.baseurl }}/sitemap.xml" />
+		<meta name="google-site-verification" content="{{site.google_verify}}" />
+	</head>
+<body>
