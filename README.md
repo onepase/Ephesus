@@ -27,8 +27,8 @@ Author [Hakan Torun](https://hakan.io).
 
 ## Screenshots
 
-![light-theme](https://github.com/onepase/Ephesus/blob/master/light.jpg)
-![dark-theme](https://github.com/onepase/Ephesus/blob/master/dark.jpg)
+![light-theme](https://github.com/onepase/Ephesus/blob/master/light.png)
+![dark-theme](https://github.com/onepase/Ephesus/blob/master/dark.png)
 
 ## Installation
 
