@@ -17,11 +17,11 @@
 		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{page.url}}"/>
 		<meta property="og:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
 		<meta property="og:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
-		<meta property="og:image" content="assets/images/favicon.png"/>
+		<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/{% if page.image %}{{page.image}}{% else %}assets/images/favicon.png{% endif %}"/>
 		<meta name="twitter:card" content="summary"/>
 		<meta property="twitter:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
 		<meta property="twitter:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
-		<meta property="twitter:image" content="assets/images/favicon.png" />
+		<meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/{% if page.image %}{{page.image}}{% else %}assets/images/favicon.png{% endif %}" />
 		<link rel="stylesheet" href="assets/css/highlight.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="shortcut icon" href="assets/images/favicon.png" />
