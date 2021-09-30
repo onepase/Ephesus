@@ -1,15 +1,15 @@
 # Site settings
 site: Ephesus
-title: Ephesus Blog
+title: Ephesus - Minimalist Jekyll Theme
 keywords: ephesus, blog
 description: >-
-  Hakan Torun Personal Blog
+  Ephesus - Minimalist Jekyll Theme
 lang: en-US
 timezone:  Europe/Istanbul
 repo: https://github.com/onepase/Ephesus # site repo [optional]
-google_verify:      Q4Ewp22lX-DiRoBVzVVP13l6lh2oxChSmpGfBP0SPj8 # Put your Google Verification here
-google_analytics:   UA-50152086-19 # Put your Google Analytics code
-discus-identifier: hakanio
+google_verify:      XXX # Put your Google Verification here
+google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
+discus-identifier:  XXX
 
 # Author settings
 author:
@@ -21,6 +21,7 @@ author:
   facebook: onepase # facebook username
   instagram: onepase # instagram username
   youtube: onepase # youtube username
+  linkedin: hakantorun # linkedin username
   email: your-email@email.com # email adress
 
 
