@@ -24,7 +24,7 @@ Cupido](http://fierent.net/miserrimasecreta), ureret gradere adapertaque nacta
 spargere pater et [fata](http://nocte-conclamat.org/indiciique-micant) ferrove
 **et** loqui essem Tegeaea varios leviter. Et nymphis in exhibita villo!
 
-![Ephesus]({{ site.baseurl }}/assets/images/ephesus.jpg "Ephesus")
+![Ephesus](/assets/images/ephesus.jpg "Ephesus")
 
 Sacra erat cuncta. Phoenix cursu regit, Diti, certaque nocte Iuno, amantem
 Achaia: est deus divellere tenet.
