@@ -26,7 +26,7 @@ author:
 
 
 # URL settings
-url: "http://127.0.0.1:4000" # Domain Name of host. [username].github.io for github pages
+url: "https://cyberiuscompany.github.io/" # Domain Name of host. [username].github.io for github pages
 permalink: pretty
 
 markdown: kramdown
