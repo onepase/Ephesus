@@ -1,3 +1,5 @@
+[![Open in Visual Studio Code](https://img.shields.io/badge/Open%20in-Visal%20Studio%20Code-blue?style=for-the-badge&logo=visualstudiocode)](https://open.vscode.dev/onepase/Ephesus)
+
 # Ephesus
 
 Ephesus Jekyll Theme - Simple and Minimal Jekyll Blog Theme
@@ -33,7 +35,7 @@ Author [Hakan Torun](https://hakan.io).
 #### Dark
 ![dark-theme](https://github.com/onepase/Ephesus/blob/master/dark.png)
 
-## Installation
+## Manual Installation
 
 Run local server:
 
@@ -44,6 +46,13 @@ $ bundle install
 $ bundle exec jekyll build
 $ bundle exec jekyll serve
 ```
+
+## VSCode environment
+
+If you use VS Code and Docker, you can create a development container in one click by using the open in VS Code button at the top and select clone repo in container volume.
+
+Then  click ctrl + shift + P and simply run the `Jekyll Build` or `Jekyll Serve` task
+
 
 Navigate to `127.0.0.1:4000`.
 
